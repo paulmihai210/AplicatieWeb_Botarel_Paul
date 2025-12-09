@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație Web - Botarel Paul-Mihai</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+    <header>
+        <h1>Realizarea unei aplicații în tehnologii web – HTML, CSS, JS</h1>
+        <h2>Botarel Paul-Mihai - Grupa 4, Semigrupa 1</h2>
+    </header>
+
+    <main id="descriere">
+        <h2>1. Descriere / Informații Personale</h2>
+        <p>Aici vor fi incluse informațiile legate de propria persoană (nume, prenume, date de contact), diagrama rețelei personale, componentele hardware ale sistemului principal de lucru, caracteristicile conexiunii la rețea.</p>
+        
+        <section class="info-personale">
+            <h3>Date de Contact</h3>
+            <table>
+                <tr><th>Nume</th><td>Botarel</td></tr>
+                <tr><th>Prenume</th><td>Paul-Mihai</td></tr>
+                <tr><th>Email</th><td>botarelpaul@gmail.com</td></tr>
+            </table>
+        </section>
+        
+        <section class="hardware-retea">
+    <h3>Componente Hardware și Rețea</h3>
+    
+    <h4>Detalii Hardware</h4>
+    <ul>
+        <li>**Model Laptop:** Asus TUF Gaming F15</li>
+        <li>**Procesor (CPU):** Intel Core i5-12500H, 2.50 GHz</li>
+        <li>**Memorie RAM:** 16 GB DDR4</li>
+        <li>**Stocare:** 500 GB NVMe SSD</li>
+        <li>**Placă Video (GPU):** NVIDIA GeForce RTX 3050 Laptop GPU</li>
+    </ul>
+
+    <h4>Detalii Rețea</h4>
+    <p>Sistemul utilizează o conexiune Wi-Fi 6 (802.11ax) la un router Gigabit. Viteza nominală a conexiunii la internet (ISP) este de 500 Mbps download / 200 Mbps upload.</p>
+    
+    <figure>
+        <img src="resurse/diagrama_retea.png" alt="Diagrama rețelei personale">
+        <figcaption>Diagrama rețelei personale de acasă.</figcaption>
+    </figure>
+</section>
+        
+    </main>
+
+    <section id="monitorizare" class="content-section">
+        <h2 id="titlu-monitorizare">2. Monitorizare resurse</h2>
+        
+        <div id="slideshow-container" class="resurse-imagini">
+            <img class="resource-image active" src="resurse/monitorizare_cpu.png" alt="Monitorizare CPU">
+            <img class="resource-image" src="resurse/monitorizare_memorie.png" alt="Monitorizare Memorie">
+            <img class="resource-image" src="resurse/monitorizare_disk.png" alt="Monitorizare Disk">
+            <img class="resource-image" src="resurse/monitorizare_retea.png" alt="Monitorizare Retea">
+       </div>
+        
+        <table>
+    <caption>Consumul de resurse</caption>
+    <thead>
+        <tr><th>Resursă</th><th>Valoare</th><th>Observații</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Consum CPU</td><td>2%</td><td>Vârf în timpul vizionării video pe YouTube.</td></tr>
+        
+        <tr><td>Memorie</td><td>15.6 GB</td><td>Consumul total de memorie în timpul sarcinii.</td></tr>
+        
+        <tr><td>Activitate Disc</td><td>11%</td><td>Timpul activ al SSD/HDD în timpul sarcinii.</td></tr>
+        
+        <tr><td>Rețea (Ethernet)</td><td>32 Mbps</td><td>Vârful de bandă utilizată la încărcarea video-ului.</td></tr>
+
+        </tbody>
+</table>
+        
+    </section>
+
+    <footer id="diverse" class="content-section">
+        <h2>3. Informații Suplimentare</h2>
+        <p>Aici se pot include informații legate de monitorizarea resurselor (Vimeo/Youtube), procese, servicii etc.</p>
+        <p>&copy; 2025 - Proiect Realizat de Botarel Paul-Mihai</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* stil.css */
+
+/* Stilizare Generală și Font-uri */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Culoarea de fundal a paginii */
+    color: #333;
+}
+
+/* Stil pentru titlul secțiunii (Cerința 4) */
+h1 {
+    text-align: center;
+    color: #004d99; /* O culoare distinctă pentru titlul principal */
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+h2, h3 {
+    border-bottom: 2px solid #ccc; /* Linia de separare sub titlul secțiunii */
+    padding-bottom: 10px;
+    color: #004d99;
+}
+
+/* Stilizarea secțiunilor de conținut (Cerința 4) */
+.content-section, main {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra (shadow) pentru secțiune */
+    border-radius: 8px;
+}
+
+/* Stilizarea tabelelor (Cerința 4) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #ddd; /* Marginea tabelului */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Stilizarea imaginilor (Cerința 4) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border: 3px solid #004d99; /* O bordură în jurul imaginii */
+    padding: 5px;
+}
+
+/* Stil specific pentru containerul de imagini de monitorizare (Cerința 5) */
+#slideshow-container {
+    position: relative;
+    overflow: hidden; /* Ascunde imaginile care nu sunt active */
+    height: 300px; /* Înălțime fixă pentru slide-show */
+}
+
+.resource-image {
+    display: none; /* Ascunde toate imaginile inițial */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asigură că imaginea se încadrează în container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out; /* Tranziție CSS pentru un efect mai fin (opțional) */
+}
+
+.resource-image.active {
+    display: block; /* Afișează doar imaginea activă */
+    opacity: 1;
+}
+
+/* Stilizare footer */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 0;
+}
